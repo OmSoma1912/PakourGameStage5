@@ -93,7 +93,7 @@ function draw(){
         reset.visible = true;
         
     
-        if(touches.lenght > 0 || mousePressedOver(reset)){
+        if(touches.length > 0 || mousePressedOver(reset)){
            restart();
            touches = [];
         }
