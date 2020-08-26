@@ -55,13 +55,13 @@ function draw(){
             touches = [];
         }
 
-        if(touches.length > 100 || keyDown("left_arrow")){
+        if(touches.length > 0 || keyDown("left_arrow")){
             player.x = player.x - 7;
             player.addImage("player", player_img2); 
             touches = [];
         }
 
-        if(touches.length > 500 || keyDown("right_arrow")){
+        if(touches.length > 0 || keyDown("right_arrow")){
             player.x = player.x + 7;
             player.addImage("player", player_img1);
             touches = [];
@@ -93,8 +93,7 @@ function draw(){
         reset.visible = true;
         
     
-        if(touches.lenght > 100
-           0 || mousePressedOver(reset)){
+        if(touches.lenght > 0 || mousePressedOver(reset)){
            restart();
            touches = [];
         }
